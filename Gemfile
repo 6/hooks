@@ -11,6 +11,12 @@ gem 'jbuilder', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
+  gem 'rspec-its'
+  gem 'webmock'
+  gem 'database_cleaner'
+  gem 'factory_girl_rails'
+  gem 'zeus'
 end
 
 group :development do
