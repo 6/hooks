@@ -9,11 +9,11 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'rest-client'
+gem 'responders', '~> 2.0'
 
 group :development, :test do
   gem 'byebug'
   gem 'rspec-rails'
-  gem 'rspec-its'
   gem 'webmock'
   gem 'database_cleaner'
   gem 'factory_girl_rails'

@@ -19,5 +19,12 @@ describe HookExecutionsController do
         expect(stubbed_request).to have_been_made.once
       end
     end
+
+    context "with an invalid token" do
+      it "returns 404" do
+        post :create, {token: "invalid", something_else: "okay"}
+        expect(response.status).to eq(404)
+      end
+    end
   end
 end
